@@ -1,22 +1,8 @@
 import SectionHeading from "@/components/section-heading"
 import { Card, CardContent } from "@/components/ui/card"
-import { FileText, Table, Code, Layout, Server } from "lucide-react"
+import { Code, Layout, Server } from "lucide-react"
 
 const skillCategories = [
-  {
-    title: "Microsoft Word",
-    icon: <FileText className="h-8 w-8 mb-4 text-blue-600" />,
-    skills: [
-      "Document creation, formatting, and editing",
-      "Styles, templates, and themes for reports",
-      "Advanced document formatting",
-    ],
-  },
-  {
-    title: "Microsoft Excel",
-    icon: <Table className="h-8 w-8 mb-4 text-green-600" />,
-    skills: ["Pivot tables and data analysis", "Data validation techniques", "Conditional formatting"],
-  },
   {
     title: "HTML & CSS",
     icon: <Layout className="h-8 w-8 mb-4 text-orange-600" />,
