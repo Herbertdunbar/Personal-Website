@@ -28,28 +28,28 @@ export default function Hero() {
 
           <div className="flex gap-4 mb-12">
             <Link href="https://github.com/Herbertdunbar" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Github className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="rounded-full p-2">
+                <Github className="h-8 w-8" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
             <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="rounded-full p-2">
+                <Linkedin className="h-8 w-8" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
             <Link href="mailto:herbertdunbar19@gmail.com">
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Mail className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="rounded-full p-2">
+                <Mail className="h-8 w-8" />
                 <span className="sr-only">Email</span>
               </Button>
             </Link>
           </div>
 
           <Link href="#about" className="animate-bounce">
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <ArrowDown className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="rounded-full p-2">
+              <ArrowDown className="h-8 w-8" />
               <span className="sr-only">Scroll Down</span>
             </Button>
           </Link>

@@ -35,13 +35,13 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 py-4">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
+        <nav className="flex items-center justify-center">
+          <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white absolute left-4">
             HD
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 justify-center">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -51,7 +51,6 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <ModeToggle />
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -60,6 +59,11 @@ export default function Navbar() {
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="ml-2">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
+          </div>
+
+          {/* Theme Toggle - Desktop */}
+          <div className="hidden md:block absolute right-4">
+            <ModeToggle />
           </div>
         </nav>
 
