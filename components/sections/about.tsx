@@ -2,7 +2,7 @@ import SectionHeading from "@/components/section-heading"
 
 export default function About() {
   return (
-    <section id="about" className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section id="about" className="py-16 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <SectionHeading title="About Me" subtitle="Get to know more about my background and career goals" />
 

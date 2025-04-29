@@ -14,7 +14,7 @@ const experiences = [
     ],
   },
   {
-    title: "Caregiver",
+    title: "Domestic Operational Coordinator",
     company: "Personal Quality Private Duty Sitting Services",
     period: "April 2024 - Present",
     responsibilities: [
@@ -27,13 +27,16 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16">
+    <section id="experience" className="py-16 bg-transparent">
       <div className="container mx-auto px-4">
         <SectionHeading title="Professional Experience" subtitle="My work history and professional achievements" />
 
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index}>
+            <Card
+              key={index}
+              className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm"
+            >
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-shrink-0 flex items-start justify-center">

@@ -4,12 +4,12 @@ import { GraduationCap, Code } from "lucide-react"
 
 export default function Education() {
   return (
-    <section id="education" className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section id="education" className="py-16 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <SectionHeading title="Education & Training" subtitle="My academic background and professional development" />
 
         <div className="max-w-4xl mx-auto space-y-8">
-          <Card>
+          <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-start justify-center">
@@ -33,7 +33,7 @@ export default function Education() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-start justify-center">

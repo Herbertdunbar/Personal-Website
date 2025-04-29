@@ -22,13 +22,16 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16">
+    <section id="skills" className="py-16 bg-transparent">
       <div className="container mx-auto px-4">
         <SectionHeading title="Technical Skills" subtitle="A showcase of my technical expertise and capabilities" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="overflow-hidden">
+            <Card
+              key={index}
+              className="overflow-hidden backdrop-blur-sm bg-white/90 dark:bg-gray-950/90 border-2 border-gray-200 dark:border-gray-800"
+            >
               <CardContent className="p-6 text-center">
                 <div className="flex flex-col items-center">
                   {category.icon}

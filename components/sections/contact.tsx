@@ -37,14 +37,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-16 bg-transparent">
       <div className="container mx-auto px-4">
         <SectionHeading title="Contact Me" subtitle="Get in touch for opportunities or collaborations" />
 
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:col-span-1 space-y-6">
-              <Card>
+              <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-blue-600 mt-1" />
@@ -58,7 +58,7 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-blue-600 mt-1" />
@@ -72,7 +72,7 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" />
@@ -86,7 +86,7 @@ export default function Contact() {
             </div>
 
             <div className="md:col-span-2">
-              <Card>
+              <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

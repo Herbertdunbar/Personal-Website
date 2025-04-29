@@ -7,10 +7,17 @@ import Experience from "@/components/sections/experience"
 import Projects from "@/components/sections/projects"
 import Contact from "@/components/sections/contact"
 import Footer from "@/components/footer"
+import "@/app/8bit-background.css"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
+    <div className="min-h-screen pixel-bg relative">
+      {/* Decorative pixel corners */}
+      <div className="pixel-corner pixel-corner-tl"></div>
+      <div className="pixel-corner pixel-corner-tr"></div>
+      <div className="pixel-corner pixel-corner-bl"></div>
+      <div className="pixel-corner pixel-corner-br"></div>
+
       <Navbar />
       <main>
         <Hero />

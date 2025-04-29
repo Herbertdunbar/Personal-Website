@@ -1,0 +1,98 @@
+.pixel-bg {
+  background-color: #f0f0f0;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(0, 0, 0, 0.05) 25%,
+      rgba(0, 0, 0, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.05) 75%,
+      rgba(0, 0, 0, 0.05) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(0, 0, 0, 0.05) 25%,
+      rgba(0, 0, 0, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.05) 75%,
+      rgba(0, 0, 0, 0.05) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 50px 50px;
+}
+
+.dark .pixel-bg {
+  background-color: #121212;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(255, 255, 255, 0.03) 25%,
+      rgba(255, 255, 255, 0.03) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.03) 75%,
+      rgba(255, 255, 255, 0.03) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(255, 255, 255, 0.03) 25%,
+      rgba(255, 255, 255, 0.03) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.03) 75%,
+      rgba(255, 255, 255, 0.03) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 50px 50px;
+}
+
+/* 8-bit style decorative elements */
+.pixel-corner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(45deg, transparent 48%, #3b82f6 48%, #3b82f6 52%, transparent 52%),
+    linear-gradient(135deg, transparent 48%, #3b82f6 48%, #3b82f6 52%, transparent 52%);
+  background-size: 20px 20px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pixel-corner-tl {
+  top: 0;
+  left: 0;
+}
+
+.pixel-corner-tr {
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.pixel-corner-bl {
+  bottom: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+
+.pixel-corner-br {
+  bottom: 0;
+  right: 0;
+  transform: scale(-1);
+}
+
+.pixel-font {
+  font-family: monospace;
+  letter-spacing: -0.1em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
