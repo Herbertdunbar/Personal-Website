@@ -4,23 +4,26 @@ import { GraduationCap, Code } from "lucide-react"
 
 export default function Education() {
   return (
-    <section id="education" className="py-16 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
+    <section id="education" className="py-16 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm pixel-section">
       <div className="container mx-auto px-4">
         <SectionHeading title="Education & Training" subtitle="My academic background and professional development" />
 
         <div className="max-w-4xl mx-auto space-y-8">
-          <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90">
+          <Card className="pixel-card">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-start justify-center">
-                  <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-full">
+                  <div
+                    className="p-3 bg-blue-100 dark:bg-blue-900 rounded-none"
+                    style={{ boxShadow: "3px 3px 0 rgba(0,0,0,0.2)" }}
+                  >
                     <GraduationCap className="h-8 w-8 text-blue-600 dark:text-blue-300" />
                   </div>
                 </div>
                 <div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                    <h3 className="text-xl font-semibold">Year Up United</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">2024-Present</span>
+                    <h3 className="text-xl font-semibold pixel-font">Year Up United</h3>
+                    <span className="text-sm text-gray-600 dark:text-gray-400 pixel-font">2024-Present</span>
                   </div>
                   <h4 className="text-lg font-medium mb-2">Application Development Program</h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -33,18 +36,21 @@ export default function Education() {
             </CardContent>
           </Card>
 
-          <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-950/90">
+          <Card className="pixel-card">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex-shrink-0 flex items-start justify-center">
-                  <div className="p-3 bg-green-100 dark:bg-green-900 rounded-full">
+                  <div
+                    className="p-3 bg-green-100 dark:bg-green-900 rounded-none"
+                    style={{ boxShadow: "3px 3px 0 rgba(0,0,0,0.2)" }}
+                  >
                     <Code className="h-8 w-8 text-green-600 dark:text-green-300" />
                   </div>
                 </div>
                 <div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                    <h3 className="text-xl font-semibold">Web Development Projects</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">2024-Present</span>
+                    <h3 className="text-xl font-semibold pixel-font">Web Development Projects</h3>
+                    <span className="text-sm text-gray-600 dark:text-gray-400 pixel-font">2024-Present</span>
                   </div>
                   <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>All projects are available on my professional GitHub</li>

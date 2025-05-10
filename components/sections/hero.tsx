@@ -7,20 +7,32 @@ export default function Hero() {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">Herbert Dunbar Jr.</h1>
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 max-w-3xl">
+          <h1
+            className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 pixel-font"
+            style={{ textShadow: "3px 3px 0 rgba(0,0,0,0.2)" }}
+          >
+            Herbert Dunbar Jr.
+          </h1>
+          <p
+            className="text-xl md:text-2xl text-white dark:text-white mb-8 max-w-3xl bg-black/50 dark:bg-black/50 px-4 py-2 backdrop-blur-sm rounded-none pixel-font"
+            style={{ textShadow: "2px 2px 0 rgba(0,0,0,0.5)", boxShadow: "4px 4px 0 rgba(0,0,0,0.2)" }}
+          >
             Aspiring Software Developer with expertise in web development and Microsoft tools
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-10">
             <Link href="mailto:herbertdunbar19@gmail.com">
-              <Button className="gap-2">
+              <Button className="gap-2 rounded-none" style={{ boxShadow: "3px 3px 0 rgba(0,0,0,0.2)" }}>
                 <Mail className="h-4 w-4" />
                 Contact Me
               </Button>
             </Link>
             <Link href="#projects">
-              <Button variant="outline" className="gap-2">
+              <Button
+                variant="outline"
+                className="gap-2 rounded-none"
+                style={{ boxShadow: "3px 3px 0 rgba(0,0,0,0.2)" }}
+              >
                 View My Projects
               </Button>
             </Link>

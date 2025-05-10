@@ -18,6 +18,13 @@ export default function Home() {
       <div className="pixel-corner pixel-corner-bl"></div>
       <div className="pixel-corner pixel-corner-br"></div>
 
+      {/* Floating 8-bit elements */}
+      <div className="pixel-art pixel-mushroom"></div>
+      <div className="pixel-art pixel-coin"></div>
+      <div className="pixel-art pixel-star"></div>
+      <div className="pixel-art pixel-block"></div>
+      <div className="pixel-art pixel-ghost"></div>
+
       <Navbar />
       <main>
         <Hero />

@@ -22,7 +22,7 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16 bg-transparent">
+    <section id="skills" className="py-16 bg-transparent pixel-section">
       <div className="container mx-auto px-4">
         <SectionHeading title="Technical Skills" subtitle="A showcase of my technical expertise and capabilities" />
 
@@ -30,12 +30,12 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <Card
               key={index}
-              className="overflow-hidden backdrop-blur-sm bg-white/90 dark:bg-gray-950/90 border-2 border-gray-200 dark:border-gray-800"
+              className="overflow-hidden backdrop-blur-sm bg-white/90 dark:bg-gray-950/90 border-2 border-gray-200 dark:border-gray-800 pixel-card"
             >
               <CardContent className="p-6 text-center">
                 <div className="flex flex-col items-center">
                   {category.icon}
-                  <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+                  <h3 className="text-xl font-semibold mb-4 pixel-font">{category.title}</h3>
                   <ul className="space-y-2 text-left w-full">
                     {category.skills.map((skill, skillIndex) => (
                       <li key={skillIndex} className="flex items-start">
