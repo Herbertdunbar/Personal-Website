@@ -31,12 +31,16 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 dark:bg-gray-950/90 backdrop-blur-md shadow-sm" : "bg-transparent"
+        scrolled ? "bg-black/70 dark:bg-black/70 backdrop-blur-md shadow-sm" : "bg-black/50 dark:bg-black/50"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-center">
-          <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white absolute left-4">
+          <Link
+            href="/"
+            className="text-xl font-bold text-white dark:text-white absolute left-4 pixel-font"
+            style={{ textShadow: "2px 2px 0 rgba(0,0,0,0.5)" }}
+          >
             HD
           </Link>
 
@@ -46,7 +50,8 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                className="text-white hover:text-blue-300 dark:text-white dark:hover:text-blue-300 transition-colors pixel-font"
+                style={{ textShadow: "2px 2px 0 rgba(0,0,0,0.5)" }}
               >
                 {item.name}
               </Link>
@@ -57,7 +62,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <ModeToggle />
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="ml-2">
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? <X className="h-6 w-6 text-white" /> : <Menu className="h-6 w-6 text-white" />}
             </Button>
           </div>
 
@@ -69,13 +74,14 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pt-4 pb-2">
+          <div className="md:hidden pt-4 pb-2 bg-black/80 backdrop-blur-md">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                  className="text-white hover:text-blue-300 dark:text-white dark:hover:text-blue-300 transition-colors pixel-font px-4"
+                  style={{ textShadow: "2px 2px 0 rgba(0,0,0,0.5)" }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
