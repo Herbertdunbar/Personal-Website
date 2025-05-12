@@ -38,24 +38,33 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="flex gap-4 mb-12">
+          <div className="flex gap-4 mb-10">
             <Link href="https://github.com/Herbertdunbar" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="rounded-full p-2">
-                <Github className="h-8 w-8" />
+              <div
+                className="bg-white/20 backdrop-blur-sm p-1 rounded-none hover:bg-white/30 transition-all"
+                style={{ boxShadow: "2px 2px 0 rgba(0,0,0,0.3)" }}
+              >
+                <Github className="h-4 w-4 text-white" style={{ filter: "drop-shadow(1px 1px 0 rgba(0,0,0,0.3))" }} />
                 <span className="sr-only">GitHub</span>
-              </Button>
+              </div>
             </Link>
             <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="ghost" size="icon" className="rounded-full p-2">
-                <Linkedin className="h-8 w-8" />
+              <div
+                className="bg-white/20 backdrop-blur-sm p-1 rounded-none hover:bg-white/30 transition-all"
+                style={{ boxShadow: "2px 2px 0 rgba(0,0,0,0.3)" }}
+              >
+                <Linkedin className="h-4 w-4 text-white" style={{ filter: "drop-shadow(1px 1px 0 rgba(0,0,0,0.3))" }} />
                 <span className="sr-only">LinkedIn</span>
-              </Button>
+              </div>
             </Link>
             <Link href="mailto:herbertdunbar19@gmail.com">
-              <Button variant="ghost" size="icon" className="rounded-full p-2">
-                <Mail className="h-8 w-8" />
+              <div
+                className="bg-white/20 backdrop-blur-sm p-1 rounded-none hover:bg-white/30 transition-all"
+                style={{ boxShadow: "2px 2px 0 rgba(0,0,0,0.3)" }}
+              >
+                <Mail className="h-4 w-4 text-white" style={{ filter: "drop-shadow(1px 1px 0 rgba(0,0,0,0.3))" }} />
                 <span className="sr-only">Email</span>
-              </Button>
+              </div>
             </Link>
           </div>
 
