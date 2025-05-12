@@ -12,9 +12,8 @@ import "@/app/8bit-background.css"
 export default function Home() {
   return (
     <div className="min-h-screen pixel-bg relative">
-      {/* Decorative pixel corners */}
-      <div className="pixel-corner pixel-corner-tl"></div>
-      <div className="pixel-corner pixel-corner-tr"></div>
+      {/* Removed the top corner decorations */}
+      {/* Keeping only bottom corners */}
       <div className="pixel-corner pixel-corner-bl"></div>
       <div className="pixel-corner pixel-corner-br"></div>
 
