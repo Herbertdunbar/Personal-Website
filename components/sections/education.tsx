@@ -23,7 +23,7 @@ export default function Education() {
                 <div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h3 className="text-xl font-semibold pixel-font">Year Up United</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400 pixel-font">2024-Present</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">January 2024 - March 2025</span>
                   </div>
                   <h4 className="text-lg font-medium mb-2">Application Development Program</h4>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -50,7 +50,7 @@ export default function Education() {
                 <div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                     <h3 className="text-xl font-semibold pixel-font">Web Development Projects</h3>
-                    <span className="text-sm text-gray-600 dark:text-gray-400 pixel-font">2024-Present</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">2024-Present</span>
                   </div>
                   <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                     <li>All projects are available on my professional GitHub</li>

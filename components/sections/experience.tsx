@@ -47,7 +47,7 @@ export default function Experience() {
                   <div className="flex-grow">
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                       <h3 className="text-xl font-semibold pixel-font">{exp.title}</h3>
-                      <span className="text-sm text-gray-600 dark:text-gray-400 pixel-font">{exp.period}</span>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">{exp.period}</span>
                     </div>
                     <h4 className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-3">{exp.company}</h4>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
