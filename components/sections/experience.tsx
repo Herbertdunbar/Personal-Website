@@ -6,7 +6,7 @@ const experiences = [
   {
     title: "Internship Simulator",
     company: "Maxx Potential",
-    period: "January 2025 - Present",
+    period: "January 2025 - April 2025",
     responsibilities: [
       "Developing features or fixing bugs in existing applications",
       "Writing and testing code using programming languages like Python, HTML, CSS, and JavaScript",
@@ -14,7 +14,7 @@ const experiences = [
     ],
   },
   {
-    title: "Caregiver",
+    title: "Domestic Operator",
     company: "Personal Quality Private Duty Sitting Services",
     period: "April 2024 - Present",
     responsibilities: [

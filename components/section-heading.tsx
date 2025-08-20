@@ -19,7 +19,7 @@ export default function SectionHeading({ title, subtitle }: SectionHeadingProps)
           className="mt-4 text-lg text-white dark:text-white max-w-3xl mx-auto bg-black/50 dark:bg-black/50 px-4 py-2 backdrop-blur-sm rounded-none pixel-font"
           style={{ textShadow: "2px 2px 0 rgba(0,0,0,0.5)", boxShadow: "4px 4px 0 rgba(0,0,0,0.2)" }}
         >
-          {subtitle}
+          {title === "My Projects" ? "My recent web development work" : subtitle}
         </p>
       )}
     </div>
